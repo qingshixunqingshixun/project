@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人理财精灵</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#submit").click(function(){
+		if($("#username").val() == 0 ){
+			alert("帐号不能为空");
+		}else{
+			if (($("#username").val().length )  < 0 || ($("#username").val().length) > 3 ) {
+				alert("帐号必须为 0 ~ 3 位 " );
+			}
+		}
+		if ($("#password").val() == 0) {
+			alert("密码不能为空");
+		}else{
+			if ( ($("#password").val().length ) < 0 || ($("#password").val().length ) > 3 ) {
+				alert("密码须为 0 ~ 3 位 ");
+			}
+		}
+	})
+})
+</script>
+<body>
+	<!-- box start-->
+	<div class="box">
+		<h2>个人理财精灵</h2>
+		<!-- center start-->
+		<div class="center">
+			<div class="top">
+				<font>帐&nbsp;&nbsp;&nbsp;&nbsp;号：</font><input id="username" type="text" name="username" placeholder="请输入您的帐号"><br>
+				<font>密&nbsp;&nbsp;&nbsp;&nbsp;码：</font><input id="password" type="password" name="password" placeholder="请输入您的密码">
+			</div>
+			<div class="bottom">
+				<button type="submit" name="submit" id="submit"><font>登</font><font>录</font></button>
+			</div>
+			<div class="footer">
+				<a href="addition.html"> >> 点击注册</a>
+			</div>
+		</div>
+		<!-- center end-->
+	</div>
+	<!-- box end-->
+</body>
+</html>

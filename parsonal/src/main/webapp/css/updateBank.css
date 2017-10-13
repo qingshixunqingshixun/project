@@ -1,0 +1,66 @@
+i.bj .top{
+	width: 1100px;
+	overflow: hidden;
+}
+
+.bj .top ul li{
+	width: 540px;
+	background: url(../images/main_10.gif) repeat-x;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+}
+.bj .top ul .n1{
+	margin-right: 20px;
+}
+.bj .top ul li a{
+	width: 540px;
+	display: block;
+	color: #0f0;
+	font-size: 16px;
+}
+.bj .main_01,.main_02{
+	width: 1100px;
+	margin-top: 5px;
+}
+.bj .main_01 .update{
+	margin: auto;
+	width: 1090px;
+	height: 500px;
+}
+.bj .main_02 .show{
+	margin: auto;
+	width: 1090px;
+	height: 500px;
+}
+.bj .main_02 .show .tt{
+	margin: 15px 0;
+}
+.bj .main_01 .update .tt{
+	margin: 15px 0;
+}
+.bj .main_02 .show .m1{
+	border: solid 1px #000;
+	width: 1090px;
+	text-align: center;
+}
+.bj .main_02 .show .m1 .n1{
+	border: solid 1px #000;
+}
+.bj .main_02 .show .m1 .n2{
+	border: solid 1px #000;
+}
+.bj .main_01 .update .m1{
+	border: solid 1px #000;
+	width: 1090px;
+	text-align: center;
+}
+.bj .main_01 .update .m1 .n1{
+	border: solid 1px #000;
+}
+.bj .main_01 .update .m1 .n2{
+	border: solid 1px #000;
+}
+.bj .main_01 .update .m1 .n2 a{
+	color: #0f0;
+}

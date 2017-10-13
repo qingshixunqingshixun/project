@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/addition.css">
+<script type="text/javascript">
+function massage(obj){
+	var name = obj;
+	var checkUserNameResult = document.getElementById('checkUserNameResult');
+	if (name.trim().length == 0) {
+		checkUserNameResult.innerHTML = "姓名不能为空";
+		obj.focus();
+	}else{
+		checkUserNameResult = "";
+	}
+}
+function pw(obj){
+	var password = obj;
+	var checkPasswordResult = document.getElementById('checkPasswordResult');
+	if (password.trim().length == 0) {
+		checkPasswordResult.innerHTML = "密码不能为空";
+		obj.focus();
+	}else{
+		checkPasswordResult = "";
+	}
+}
+function againpw(obj){
+	var password = obj;
+	var checkaginPasswordResult = document.getElementById('checkaginPasswordResult');
+	if (password.trim().length == 0) {
+		checkaginPasswordResult.innerHTML = "重复密码不能为空";
+		obj.focus();
+	}else{
+		checkaginPasswordResult = "";
+	}
+}
+function login() {
+			//获取用户输入的用户名
+			var name = document.getElementById("name").value;
+			//获取用户输入的密码
+			var password = document.getElementById("password").value;
+		
+			//验证用户输入项
+			if (name == "") {
+				alert("用户名不允许为空！");
+				return false;
+			} else if (password == "") {
+				alert("密码不允许为空！");
+				return false;
+			}else if (againpassword == "") {
+				alert("重复密码不允许为空！");
+				return false;
+			}
+			 else if (name.length<0) {
+				alert("用户名不能少于0位字符");
+				return false;
+			}else if (name.length>3) {
+				alert("用户名不能大于3位字符");
+				return false;
+			}else if (password.length<0) {
+				alert("密码不能少于0位字符");
+				return false;
+			}else if (password.length>3) {
+				alert("密码不能大于3位字符");
+				return false;
+			}else if (againpassword.length<0) {
+				alert("重复密码不能少于0位字符");
+				return false;
+			}else if (againpassword.length>3) {
+				alert("重复密码不能大于3位字符");
+				return false;
+			}
+
+			return true;
+		}
+
+</script>
+<body>
+<!-- box start-->
+	<div class="box">
+		<h2>个人理财精灵</h2>
+		<!-- center start-->
+		<div class="center">
+<form action = "" method="post" onsubmit="return login()">
+	用户名称：<input type="text" name="name" id="name" onblur="massage(this.value)"><br>
+	<font id="checkUserNameResult" style="color: #f00";></font><br>
+	登录密码：<input type="text" name="password" id="password" onblur="pw(this.value)"><br>
+	<font id="checkPasswordResult" style="color: #f00";></font><br>
+	重复密码：<input type="text" name="againpassword" id="againpassword" onblur="againpw(this.value)"><br>
+	<font id="checkaginPasswordResult" style="color: #f00";></font><br>
+	
+	<div class="bottom">
+		  <a href="addUser"><button type="submit" id="submit"><font>提</font><font>交</font></button></a>
+	</div>
+	<font style="color: #f00; font-size: 22px;"></font><br>
+</form>			
+	<div class="footer">
+		<a href="index.html"> << 返回首页</a>
+	</div>
+		</div>
+		<!-- center end-->
+	</div>
+	<!-- box end-->
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人理财精灵</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<script	src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.libottom').hide(); //初始ul隐藏
+$('.menu span').hover(function(){ //鼠标移动函数
+$(this).parent().find('.libottom').slideDown();  //找到ul.son_ul显示
+$(this).parent().find('.libottom li').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}); //li的hover效果
+$(this).parent().hover(function(){},
+ function(){
+	 $(this).parent().find(".libottom").slideUp(); 
+	 }
+ );
+},function(){}
+);
+
+}
+);
+</script>
+<body>
+<!-- header start-->
+	<div class="header">
+		<div class="top">
+		<tt><img src="images/main_04.jpg"></tt>
+		<dd>
+			<span>
+			<font>当前登录用户：美羊羊</font>
+			<a href="">退出</a>
+			</span>
+		</dd>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="menu">
+		<tt></tt>
+			<ul>
+				<li><a href="">首页</a></li>
+				<li>
+				<span><a href="">个人用户</a></span>
+					<div class="libottom"> 
+						<a href="ordinary.html">个人信息</a>
+						<a href="ordinaryList.html">修改个人信息</a>
+						<!-- 请判断是否为管理员 -->
+						<a href="">修改用户</a>
+					</div>
+				</li>
+				
+				<li>
+				<span><a href="">个人支出</a></span>
+					<div class="libottom"> 
+						<a href="personalOutlays.html">消费信息</a>
+						<a href="personalOutlaysList.html">修改信息</a>
+					</div>
+				</li>
+				
+				<li>
+					<span><a href="">个人收入</a></span>
+					<div class="libottom"> 
+						<a href="personalInt.html">收入信息</a>
+						<a href="personalIntList.html">修改信息</a>
+					</div>
+				</li>
+				<li>
+					<span><a href="">绑定银行卡</a></span>
+					<div class="libottom"> 
+						<a href="bank.html">查看银行卡</a>
+						<a href="addBank.html">增加银行卡</a>
+						<a href="updateBank.html">修改银行卡</a>
+						<a href="deleteBank.html">删除银行卡</a>
+					</div>
+				</li>
+				</li>
+				<li><a href="">统计图形</a></li>
+			</ul>
+		<dd></dd>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="banner">
+			<img src="images/banner.jpg">
+		</div>
+		<div style="clear: both;"></div>
+		<!-- bj start -->
+		<div class="bj">
+			<div class="top">
+			<!-- 管理员展示界面 -->
+				<ul>
+					<li class="n1"><a href="admin.html">展示信息</a></li>
+					<li><a href="adminList.html">修改信息</a></li>
+				</ul>
+			</div>
+			<div class="main_02">
+				<div class="show">
+						<div class="tt">查询: <input type="text" name=""></div>
+					<table  class="m1" cellpadding="0" cellspacing="0">
+						<tr class="n1">
+							<td class="n2">编号</td>
+							<td class="n2">用户名</td>
+							<td class="n2">用户密码</td>
+							<td class="n2">重复密码</td>
+							<td class="n2">状态</td>
+						</tr>
+						<tr>
+							<td class="n2">1</td>
+							<td class="n2">管理员</td>
+							<td class="n2">789</td>
+							<td class="n2">789</td>
+							<td class="n2">管理员</td>
+						</tr>
+					</table>		
+				</div>
+			</div>
+		</div>
+		<!-- bj end -->
+	</div>
+<!--header end -->
+</body>
+</html>

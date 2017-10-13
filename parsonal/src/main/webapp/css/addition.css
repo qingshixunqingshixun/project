@@ -1,0 +1,81 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	line-height: 22px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background: url(../images/main_01.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+ul,li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+img{
+	border: 0px;
+}
+.box{
+	width: 550px;
+	height: 550px;
+	margin: 120px auto;
+	text-align: center;
+	border-radius: 10px;
+	background: url(../images/main_02.png);
+	overflow: hidden;
+	color: #fff;
+}
+.box h2{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 50px;
+}
+
+.box input,.bottom button{
+	border-radius: 5px;
+	margin-top: 50px;
+	line-height: 30px;
+	background: none;
+	color: #fff;
+	outline: none;
+	border: none;
+	border: solid 1px #fff;
+	width: 300px;
+}
+.box input:focus{
+	box-shadow: 0px 1px 5px #ccc ;
+}
+.box .top{
+	margin-top: -30px;
+}
+.box .top font{
+	font-size: 18px;
+}
+.box .bottom button{
+	cursor: pointer;
+	width: 378px;
+	border: solid 1px #f53b02;
+	background: #fa511c;
+}
+.box .bottom button font{
+	color: #fff;
+	margin: 0 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.box .bottom button:hover{
+	background: url(../images/main_03.png);
+}
+.box .footer{
+	text-align: right;
+	margin: 0 20px 0 0;
+}

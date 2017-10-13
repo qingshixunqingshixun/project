@@ -1,0 +1,49 @@
+.bj .top{
+	width: 1100px;
+	overflow: hidden;
+}
+
+.bj .top ul li{
+	width: 540px;
+	background: url(../images/main_10.gif) repeat-x;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+}
+.bj .top ul .n1{
+	margin-right: 20px;
+}
+.bj .top ul li a{
+	width: 540px;
+	display: block;
+	color: #0f0;
+	font-size: 16px;
+}
+.bj .main_01{
+	width: 1100px;
+	margin-top: 15px;
+}
+.bj .main_01 .add{
+	margin: auto;
+	width: 1100px;
+	height: 500px;
+}
+.bj .main_01 .add .left{
+	float: left;
+	width: 500px;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 20px;
+	border: solid 1px #0f0;
+	border-radius: 5px 5px 0 0;
+}
+.bj .main_01 .add .left tt{
+	margin-left: -65px;
+}
+.bj .main_01 .add .right{
+	float: left;
+	margin: 30px 0 0 30px;
+	width: 150px;
+	line-height: 25px;
+	text-align: center;	
+}
